@@ -24,6 +24,7 @@ module.exports = (isProduction) => {
     shareScope: 'default',
     exposes: {
       './firebase': './src/shared/firebase',
+      './ErrorBoundary': './src/shared/ui/ErrorBoundary',
     },
     shared: [
       {

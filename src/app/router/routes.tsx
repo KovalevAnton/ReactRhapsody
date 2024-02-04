@@ -1,8 +1,7 @@
-// src/shared/router/routes.tsx
 import React, { lazy } from 'react';
 
-const AppUno = lazy(() => import('uno/App'));
 const AppLogin = lazy(() => import('login/App'));
+const AppUno = lazy(() => import('uno/App'));
 
 export interface Route {
   path: string;
@@ -11,15 +10,11 @@ export interface Route {
 
 export const routes: Route[] = [
   {
-    path: '/uno',
-    component: AppUno,
-  },
-  {
-    path: '/login',
+    path: '/login/*',
     component: AppLogin,
   },
   {
-    path: '/',
-    component: () => <div>Hola! Buenos tardes!</div>,
+    path: '/uno',
+    component: AppUno,
   },
 ];

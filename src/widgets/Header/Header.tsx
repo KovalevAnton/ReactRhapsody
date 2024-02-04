@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { routes } from '@/shared/router/routes';
+import { routes } from '@/app/router/routes';
 
 const Header = ({ user }: { user?: any }) => {
   return (

@@ -18,13 +18,13 @@ import {
 } from 'firebase/firestore';
 
 const FIREBASE_CONFIG = {
-  apiKey: 'AIzaSyBSAqWMRUJl-BhwEmNhe0x9AzSsw37Z_pY',
-  authDomain: 'rhapsodybackend.firebaseapp.com',
-  projectId: 'rhapsodybackend',
-  storageBucket: 'rhapsodybackend.appspot.com',
-  messagingSenderId: '904873934632',
-  appId: '1:904873934632:web:5adf4e930df0971e13da1d',
-  measurementId: 'G-8RVZ8H0ZVC',
+  apiKey: 'AIzaSyBbiuLT32YHRHwNBK2FoG62CBqvDZCYnPE',
+  authDomain: 'rhapsodyapp-84a1c.firebaseapp.com',
+  projectId: 'rhapsodyapp-84a1c',
+  storageBucket: 'rhapsodyapp-84a1c.appspot.com',
+  messagingSenderId: '717527491312',
+  appId: '1:717527491312:web:9a8accc0948b2494e71835',
+  measurementId: 'G-9F0P86FWYR',
 };
 
 const app = initializeApp(FIREBASE_CONFIG);
