@@ -3,7 +3,7 @@ const DefinePlugin = require('webpack').DefinePlugin;
 
 const moduleAlias = require('./moduleAlias');
 const paths = require('./paths');
-const mfConfig = require('../mf.config');
+const mfConfig = require('./mf.config');
 
 module.exports = {
   entry: './src/index.tsx',

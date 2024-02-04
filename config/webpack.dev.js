@@ -4,8 +4,8 @@ const { merge } = require('webpack-merge');
 
 const mf = require('./mf');
 const paths = require('./paths');
+const mfConfig = require('./mf.config');
 const commonConfig = require('./webpack.common');
-const mfConfig = require('../mf.config');
 
 module.exports = merge(commonConfig, {
   mode: 'development',
@@ -34,7 +34,8 @@ module.exports = merge(commonConfig, {
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-      'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+      'Access-Control-Allow-Headers':
+        'X-Requested-With, content-type, Authorization',
     },
   },
   cache: {

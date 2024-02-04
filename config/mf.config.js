@@ -7,8 +7,8 @@ module.exports = {
     name: 'uno',
     port: 8081,
   },
-  dos: {
-    name: 'dos',
+  login: {
+    name: 'login',
     port: 8082,
   },
 };

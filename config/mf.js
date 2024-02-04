@@ -1,6 +1,6 @@
 const { ModuleFederationPlugin } = require('webpack').container;
 
-const mfConfig = require('../mf.config');
+const mfConfig = require('./mf.config');
 const dependencies = require('../package.json').dependencies;
 
 const createRemoteEntry = (key, isProd) => {
@@ -19,9 +19,12 @@ module.exports = (isProduction) => {
     remotes: {
       ...createRemoteEntry('shell', isProduction),
       ...createRemoteEntry('uno', isProduction),
-      ...createRemoteEntry('dos', isProduction),
+      ...createRemoteEntry('login', isProduction),
     },
     shareScope: 'default',
+    exposes: {
+      './firebase': './src/shared/firebase',
+    },
     shared: [
       {
         react: {
