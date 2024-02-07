@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import { lazy } from 'react';
 
 const AppLogin = lazy(() => import('login/App'));
 const AppUno = lazy(() => import('uno/App'));
@@ -16,5 +16,5 @@ export const routes: Route[] = [
   {
     path: '/uno',
     component: AppUno,
-  },
+  }
 ];

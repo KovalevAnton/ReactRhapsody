@@ -1,13 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-import { routes } from '@/app/router/routes';
+import { Link } from "react-router-dom";
+import { routes } from "@/app/router/routes";
 
 const Header = ({ user }: { user?: any }) => {
   return (
     <div>
       {!user ? (
-        'User is not registered!'
+        "User is not registered!"
       ) : (
         <nav>
           <ul>
